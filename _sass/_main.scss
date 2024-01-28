@@ -3,7 +3,7 @@ $width-mobile: 90%;
 
 $padding-regular: 24px;
 
-$font-size-nav-large: 24px;
+$font-size-nav: 24px;
 
 @mixin for-mobile-only {
   @media (max-width: 900px) { @content; }
@@ -56,7 +56,7 @@ body {
 
       .home-link {
         font-weight: bold;
-        font-size: $font-size-nav-large;
+        font-size: $font-size-nav;
         flex: 1;
       }
       .other-links {
