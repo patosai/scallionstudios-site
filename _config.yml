@@ -9,7 +9,7 @@ sass:
 collections:
   products:
     output: true
-    permalink: /product/:path
+    permalink: /products/:path
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
