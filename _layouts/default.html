@@ -22,14 +22,23 @@
     </header>
     <div class="main-content">
         {% if page.title %}
-        <h1>{{ page.title }}</h1>
+        <h1 class="title">{{ page.title }}</h1>
         {% endif %}
         <section>
             {{ content }}
         </section>
     </div>
     <footer>
-        &copy; Scallion Studios
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://scallionstudios.etsy.com">Etsy Shop</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            &copy; Scallion Studios
+        </div>
     </footer>
 </div>
 </body>

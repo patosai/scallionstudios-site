@@ -1,3 +1,5 @@
+$padding-regular: 24px;
+
 * {
   margin: 0;
   padding: 0;
@@ -14,13 +16,34 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 80%;
+  width: 70%;
+  max-width: 1200px;
   min-height: 100vh;
 
   .main-content {
     display: flex;
     flex-direction: column;
     flex: 1;
+  }
+
+  > * {
+    padding: $padding-regular 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    nav {
+      ul {
+        list-style: none;
+        a {
+          text-decoration: underline;
+          color: inherit;
+        }
+      }
+    }
   }
 }
 
@@ -29,6 +52,36 @@ body {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
-    font-size: 24px;
+    font-size: $padding-regular;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: $padding-regular;
+}
+
+.furniture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $padding-regular;
+
+  .item {
+    .img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.product-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .product-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    margin-bottom: $padding-regular;
   }
 }
